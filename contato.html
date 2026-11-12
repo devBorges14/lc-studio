@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Contato e orçamento – LC Studio</title>
+  <meta name="description" content="Fale com a LC Studio: endereço, mapa, WhatsApp e orçamento rápido.">
+  <meta name="theme-color" content="#160F1F">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=4">
+  <link rel="stylesheet" href="assets/css/app.css?v=4">
+</head>
+<body data-page="contato">
+
+<main id="conteudo">
+<section class="phero"><div class="wrap">
+  <nav class="crumbs" aria-label="Você está em"><a href="index.html">Início</a><span aria-hidden="true">/</span><span>Contato</span></nav>
+  <p class="eyebrow eyebrow--light">Contato</p>
+  <h1>Bora conversar sobre a <em>sua marca</em>?</h1>
+</div></section>
+
+<section class="section section--tint" style="padding-top:36px">
+  <div class="wrap contact">
+    <div class="contact__info">
+      <ul class="contact__list" style="margin-top:0">
+        <li><span class="contact__ic"><i data-ic="pin"></i></span><div><b>Endereço</b><span>R. Cyro M. de Carvalho, 76 – Jardim Novo Taboão<br>São Paulo – SP, 05749-270</span></div></li>
+        <li><span class="contact__ic"><i data-ic="wa"></i></span><div><b>WhatsApp</b><a href="https://wa.me/5511978136769" target="_blank" rel="noopener">(11) 97813-6769</a></div></li>
+        <li class="js-insta" hidden><span class="contact__ic"><i data-ic="insta"></i></span><div><b>Instagram</b><a class="js-insta-link" href="#" target="_blank" rel="noopener"></a></div></li>
+      </ul>
+      <div class="contact__btns">
+        <a href="https://wa.me/5511978136769" target="_blank" rel="noopener" class="btn btn--wa btn--lg"><i data-ic="wa"></i> Chamar no WhatsApp</a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=R.+Cyro+M.+de+Carvalho,+76+-+Jardim+Novo+Tabo%C3%A3o,+S%C3%A3o+Paulo+-+SP,+05749-270" target="_blank" rel="noopener" class="btn btn--outline btn--lg"><i data-ic="pin"></i> Abrir no mapa</a>
+      </div>
+    </div>
+    <div class="contact__map">
+      <iframe title="Mapa: LC Studio" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=R.+Cyro+M.+de+Carvalho,+76+-+Jardim+Novo+Tabo%C3%A3o,+S%C3%A3o+Paulo+-+SP,+05749-270&amp;output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark" id="orcamento">
+  <div class="hero__glow hero__glow--b" aria-hidden="true"></div>
+  <div class="wrap quote">
+    <header class="sec-head sec-head--light">
+      <p class="eyebrow eyebrow--light"><i data-ic="bolt"></i> Orçamento rápido</p>
+      <h2>Preencha em 30 segundos.<br><em>A gente responde no WhatsApp.</em></h2>
+      <p>Para pedidos sob medida. Sua mensagem sai pronta.</p>
+    </header>
+    <form class="form" id="quoteForm" novalidate>
+      <div class="field"><label for="f-nome">Seu nome</label><input id="f-nome" name="nome" type="text" autocomplete="name" placeholder="Como podemos te chamar?" required></div>
+      <div class="field"><label for="f-servico">Serviço</label><div class="select"><select id="f-servico" name="servico" required><option value="">Escolha um serviço</option></select></div></div>
+      <div class="field"><label for="f-qtd">Quantidade / tamanho</label><input id="f-qtd" name="quantidade" type="text" placeholder="Ex.: 500 cartões 9x5 cm"></div>
+      <div class="field">
+        <span class="label" id="l-prazo">Prazo desejado</span>
+        <div class="pills" role="radiogroup" aria-labelledby="l-prazo">
+          <label><input type="radio" name="prazo" value="Sem pressa" checked><span>Sem pressa</span></label>
+          <label><input type="radio" name="prazo" value="Até 1 semana"><span>1 semana</span></label>
+          <label><input type="radio" name="prazo" value="Até 3 dias"><span>3 dias</span></label>
+          <label><input type="radio" name="prazo" value="Urgente"><span>Urgente</span></label>
+        </div>
+      </div>
+      <div class="field"><label for="f-obs">Observação <small>(opcional)</small></label><textarea id="f-obs" name="obs" rows="3" placeholder="Cores, ideia, se já tem arte pronta..."></textarea></div>
+      <div class="preview" aria-live="polite"><span class="preview__label"><i data-ic="wa"></i> Prévia da mensagem</span><div class="bubble" id="bubble"></div></div>
+      <p class="form__error" id="formError" role="alert" hidden></p>
+      <button type="submit" class="btn btn--wa btn--lg btn--block"><i data-ic="wa"></i> Enviar pelo WhatsApp</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<script src="assets/js/data.js?v=4"></script>
+<script src="assets/js/layout.js?v=4"></script>
+<script src="assets/js/pages.js?v=4"></script>
+</body>
+</html>

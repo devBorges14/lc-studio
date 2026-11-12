@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Portfólio – LC Studio</title>
+  <meta name="description" content="Trabalhos de design, gráfica e comunicação visual da LC Studio.">
+  <meta name="theme-color" content="#160F1F">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=4">
+  <link rel="stylesheet" href="assets/css/app.css?v=4">
+</head>
+<body data-page="portfolio">
+
+<main id="conteudo">
+<section class="phero"><div class="wrap">
+  <nav class="crumbs" aria-label="Você está em"><a href="index.html">Início</a><span aria-hidden="true">/</span><span>Portfólio</span></nav>
+  <p class="eyebrow eyebrow--light">Portfólio</p>
+  <h1>Trabalhos que <em>falam</em> pela gente.</h1>
+</div></section>
+<section class="section" style="padding-top:28px">
+  <div class="wrap">
+    <!-- Para colocar um trabalho real: troque <div class="ph">...</div> por
+         <img src="assets/img/portfolio/arquivo.webp" alt="Descrição" loading="lazy"> e ajuste data-cat. -->
+    <div class="filters" role="tablist" aria-label="Filtrar portfólio">
+      <button class="filter is-active" data-filter="todos" role="tab" aria-selected="true">Todos</button>
+      <button class="filter" data-filter="logos" role="tab" aria-selected="false">Logos</button>
+      <button class="filter" data-filter="social" role="tab" aria-selected="false">Social media</button>
+      <button class="filter" data-filter="impressos" role="tab" aria-selected="false">Impressos</button>
+      <button class="filter" data-filter="visual" role="tab" aria-selected="false">Com. visual</button>
+    </div>
+    <div class="gallery" id="gallery">
+      <figure class="work work--tall reveal" data-cat="logos">
+        <button class="work__btn" aria-label="Ampliar: Identidade LC Studio">
+          <div class="work__brand"><img src="assets/img/logo-branco.png" alt="Logo LC Studio" loading="lazy" width="480" height="144"></div>
+        </button>
+        <figcaption><b>LC Studio</b><span>Identidade própria</span></figcaption>
+      </figure>
+      <figure class="work reveal" data-cat="social">
+        <button class="work__btn" aria-label="Ampliar: Posts para Instagram"><div class="ph ph--b"><i data-ic="phone"></i><span>Seu trabalho aqui</span></div></button>
+        <figcaption><b>Posts para Instagram</b><span>Social media</span></figcaption>
+      </figure>
+      <figure class="work reveal" data-cat="impressos">
+        <button class="work__btn" aria-label="Ampliar: Cartão de visita"><div class="ph ph--c"><i data-ic="card"></i><span>Seu trabalho aqui</span></div></button>
+        <figcaption><b>Cartão de visita</b><span>Impressos</span></figcaption>
+      </figure>
+      <figure class="work work--tall reveal" data-cat="visual">
+        <button class="work__btn" aria-label="Ampliar: Fachada / lona"><div class="ph ph--d"><i data-ic="easel"></i><span>Seu trabalho aqui</span></div></button>
+        <figcaption><b>Fachada / lona</b><span>Comunicação visual</span></figcaption>
+      </figure>
+      <figure class="work reveal" data-cat="logos">
+        <button class="work__btn" aria-label="Ampliar: Logo de cliente"><div class="ph ph--a"><i data-ic="pen"></i><span>Seu trabalho aqui</span></div></button>
+        <figcaption><b>Logo de cliente</b><span>Logos</span></figcaption>
+      </figure>
+      <figure class="work reveal" data-cat="impressos">
+        <button class="work__btn" aria-label="Ampliar: Tags de roupa"><div class="ph ph--b"><i data-ic="tag"></i><span>Seu trabalho aqui</span></div></button>
+        <figcaption><b>Tags de roupa</b><span>Impressos</span></figcaption>
+      </figure>
+      <figure class="work reveal" data-cat="social">
+        <button class="work__btn" aria-label="Ampliar: Stories promocionais"><div class="ph ph--c"><i data-ic="phone"></i><span>Seu trabalho aqui</span></div></button>
+        <figcaption><b>Stories promocionais</b><span>Social media</span></figcaption>
+      </figure>
+      <figure class="work reveal" data-cat="visual">
+        <button class="work__btn" aria-label="Ampliar: Adesivos e rótulos"><div class="ph ph--a"><i data-ic="sticker"></i><span>Seu trabalho aqui</span></div></button>
+        <figcaption><b>Adesivos e rótulos</b><span>Comunicação visual</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+</main>
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Imagem ampliada">
+  <button class="lightbox__close" aria-label="Fechar"><i data-ic="x"></i></button>
+  <div class="lightbox__stage" id="lbStage"></div>
+  <p class="lightbox__cap" id="lbCap"></p>
+</div>
+
+<script src="assets/js/data.js?v=4"></script>
+<script src="assets/js/layout.js?v=4"></script>
+<script src="assets/js/pages.js?v=4"></script>
+</body>
+</html>
